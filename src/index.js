@@ -1,2 +1,2 @@
-import Faicons from './faicons.jsx';
-export default Faicons;
+import Faicon from './faicon.jsx';
+export default Faicon;
