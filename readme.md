@@ -14,6 +14,7 @@ Font awesome icon is react component.
 ## Use
 After installing faicon, react, and webpack:
 ```javascript
+import React from 'react';
 import { Faicon } from 'faicon';
 
 class App extends React.Component {
@@ -25,19 +26,20 @@ class App extends React.Component {
 }
 ```
 #### Attributes
-* name="user" - name of icon without "fa-"
-* size="2" - size of icon without "fa-" & "x", default "lg"
-* spin `or` pulse - Set animate for icon
-* border
-* fixed - Set fixed size for icon
-* fh `or` fv - Set flip for icon
-* rotate="90"
-* inverse
-* addClass="my-cool-class"
+* `name="user"` - name of icon without "fa-"
+* `size="2"` - size of icon without "fa-" & "x", default "lg"
+* `spin` or `pulse` - Set animate for icon
+* `border`
+* `fixed` - Set fixed size for icon
+* `fh` or `fv` - Set flip for icon
+* `rotate="90"`
+* `inverse`
+* `addClass="my-cool-class"`
 
 #### Stack
 Inversing user in square:
 ```javascript
+import React from 'react';
 import { Stack } from 'faicon';
 
 class App extends React.Component {
