@@ -1,27 +1,31 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.css';
 
 class Faicon extends React.Component {
     render() {
-        let size = "lg",
+        let size = " fa-lg",
             name = this.props.name,
             animate = "",
             border = "",
             fixed= "",
             flip = "",
             rotate = "",
+            inverse = "",
+            stack = "",
+            addClass = "",
             nameOfClass;
 
         {/*
           * Default size fa-lg
          */}
         if (this.props.size) {
-            size = this.props.size;
+            size = " fa-" + this.props.size;
+        } else if (this.props.size === "none") {
+            size = "";
         }
 
         {/*
-          * Set animate for icon
-        */}
+         * Set animate for icon
+         */}
         if (this.props.spin) {
             animate = " fa-spin";
         } else if (this.props.pulse) {
@@ -58,9 +62,27 @@ class Faicon extends React.Component {
             rotate = " fa-rotate-" + this.props.rotate;
         }
 
-        nameOfClass = "fa fa-" + name + " fa-" + size + animate + border + fixed + flip;
+        {/*
+         * Set inverse colors for icon
+         */}
+        if (this.props.inverse) {
+            inverse = " fa-inverse";
+        }
+
+        if (this.props.stack) {
+            stack = " fa-stack-" + this.props.stack + "x";
+        }
+
+        if (this.props.addClass) {
+            addClass = " " + this.props.addClass;
+        }
+
+        nameOfClass = "fa fa-" + name
+            + size + animate + stack + rotate
+            + border + fixed + flip + inverse
+            + addClass;
         return (
-            <i className={ nameOfClass }> </i>
+            <i className={ nameOfClass } title={ this.props.title }> </i>
         );
     }
 }
