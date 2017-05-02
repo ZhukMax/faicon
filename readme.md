@@ -12,7 +12,7 @@ Font awesome icon is react component.
 `npm i --save faicon`
 
 ## Use
-After installing faicon, react, and webpack:
+After installing faicon, react, and webpack (or gulp):
 ```javascript
 import React from 'react';
 import { Faicon } from 'faicon';
@@ -26,7 +26,7 @@ class App extends React.Component {
 }
 ```
 #### Attributes
-* `name="user"` - name of icon without "fa-"
+* `name="user"` - name of icon without "fa-" ``(required)``
 * `size="2"` - size of icon without "fa-" & "x", default "lg"
 * `spin` or `pulse` - Set animate for icon
 * `border`
