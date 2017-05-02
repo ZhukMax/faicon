@@ -11,7 +11,7 @@ class Stack extends React.Component {
             rotate2 = "",
             inverse1 = false,
             inverse2 = false,
-            nameOfClass;
+            nameOfClass = "";
 
         {/*
          * Default size fa-lg
@@ -72,6 +72,7 @@ class Stack extends React.Component {
         }
 
         nameOfClass = "fa-stack fa-" + size + animate;
+        
         return (
             <span className={ nameOfClass }>
                 <Faicon name={ this.props.name1 } stack="1" size="none" fh={ fh1 } fv={ fv1 } rotate={ rotate1 } inverse={ inverse1 }/>
