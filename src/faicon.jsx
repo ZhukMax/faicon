@@ -12,7 +12,7 @@ class Faicon extends React.Component {
             inverse = "",
             stack = "",
             addClass = "",
-            nameOfClass;
+            nameOfClass = "";
 
         {/*
           * Default size fa-lg
@@ -81,6 +81,7 @@ class Faicon extends React.Component {
             + size + animate + stack + rotate
             + border + fixed + flip + inverse
             + addClass;
+        
         return (
             <i className={ nameOfClass } title={ this.props.title }> </i>
         );
