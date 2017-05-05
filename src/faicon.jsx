@@ -83,7 +83,7 @@ class Faicon extends React.Component {
             + addClass;
         
         return (
-            <i className={ nameOfClass } title={ this.props.title }> </i>
+            <i className={ nameOfClass } title={ this.props.title } aria-hidden="true"></i>
         );
     }
 }
