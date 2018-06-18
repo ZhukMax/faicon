@@ -1,6 +1,6 @@
 {
   "name": "faicon",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Font awesome react component",
   "main": "index.js",
   "repository": "https://github.com/ZhukMax/faicon.git",
@@ -10,7 +10,7 @@
   "author": "ZhukMax <zhukmax@ya.ru>",
   "license": "Apache-2.0",
   "dependencies": {
-    "font-awesome": "4.*",
-    "react": "15.*"
+    "font-awesome": "^5.0.12",
+    "react": "^16.4.1"
   }
 }
