@@ -1,16 +1,40 @@
 {
   "name": "faicon",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "Font awesome react component",
-  "main": "index.js",
+  "main": "build/index.js",
   "repository": "https://github.com/ZhukMax/faicon.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
   "bugs": {
     "url": "https://github.com/ZhukMax/faicon/issues"
   },
-  "author": "ZhukMax <zhukmax@ya.ru>",
+  "author": {
+    "name": "ZhukMax",
+    "email": "zhukmax@ya.ru"
+  },
   "license": "Apache-2.0",
-  "dependencies": {
-    "font-awesome": "^5.0.12",
+  "peerDependencies": {
     "react": "^16.4.1"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "webpack": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "font-awesome": "^4.7.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "url-loader": "^1.1.1",
+    "webpack-cli": "^3.1.0"
   }
 }

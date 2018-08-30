@@ -6,19 +6,23 @@ Font awesome icon is react component.
 ## Install
 
 #### With Yarn
-`yarn add faicon`
+```console
+yarn add faicon font-awesome
+```
 
 #### With npm
-`npm i --save faicon`
+```console
+npm i --save faicon font-awesome
+```
 
 ## Use
 
-**Important: don't exclude /node_modules directory from babel-loader paths!**
 
 After installing faicon, react, and webpack (or gulp):
 ```javascript
 import React from 'react';
 import { Faicon } from 'faicon';
+import 'font-awesome/css/font-awesome.css';
 
 class App extends React.Component {
   render() {
@@ -44,6 +48,7 @@ Inversing user in square:
 ```javascript
 import React from 'react';
 import { Stack } from 'faicon';
+import 'font-awesome/css/font-awesome.css';
 
 class App extends React.Component {
   render() {
